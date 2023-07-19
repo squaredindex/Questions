@@ -1,11 +1,11 @@
 <script>
-    import { onMount } from "svelte";
-    import { fade } from "svelte/transition";
+    import { onMount } from "svelte"
+    import { fade } from "svelte/transition"
 
-    let currentQuestion = null;
-    let currentQuestionId = null;
-    let questions = [];
-    let askedQuestionIds = [];
+    let currentQuestion = null
+    let currentQuestionId = null
+    let questions = []
+    let askedQuestionIds = []
     let categories = [
         "culture and taste",
         "family and friends",
@@ -17,42 +17,42 @@
         "travel",
         "work and money",
     ]; // selected categories
-    let difficulties = ["easy", "medium", "hard"]; // selected difficulties
-    let hasMoreQuestions = true;
-    let showButton = false;
+    let difficulties = ["easy", "medium", "hard"] // selected difficulties
+    let hasMoreQuestions = true
+    let showButton = false
 
     onMount(async () => {
-        const res = await fetch("/questions.json");
-        questions = await res.json();
-        loadRandomQuestion();
+        const res = await fetch("/questions.json")
+        questions = await res.json()
+        loadRandomQuestion()
     });
 
     function loadRandomQuestion() {
         let filteredQuestions = questions.filter(
             (q) =>
-                q.difficulties.some((diff) => difficulties.includes(diff)) &&
-                q.categories.some((cat) => categories.includes(cat)) &&
+                q.difficulties.some(diff => difficulties.includes(diff)) &&
+                q.categories.some(cat => categories.includes(cat)) &&
                 !askedQuestionIds.includes(q.id)
         );
 
         if (!filteredQuestions.length) {
             currentQuestion =
-                "You've answered all the questions! Aren't you a curious one...";
-            hasMoreQuestions = false;
-            return;
+                "You've answered all the questions! Aren't you a curious one..."
+            hasMoreQuestions = false
+            return
         }
 
-        currentQuestion = null;
+        currentQuestion = null
 
-        setTimeout((_) => {
+        setTimeout(() => {
             let randomIndex = Math.floor(
                 Math.random() * filteredQuestions.length
             );
-            currentQuestion = filteredQuestions[randomIndex].question;
-            currentQuestionId = filteredQuestions[randomIndex].id;
-            askedQuestionIds.push(currentQuestionId);
-            showButton = true; // Show the button after the first question appears
-        }, 300);
+            currentQuestion = filteredQuestions[randomIndex].question
+            currentQuestionId = filteredQuestions[randomIndex].id
+            askedQuestionIds.push(currentQuestionId)
+            showButton = true // Show the button after the first question appears
+        }, 300)
     }
 </script>
 
