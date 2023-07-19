@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "question": "In what ways have your parents influenced your choice of partners?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What have you leant from two people you've gone out with?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What kind of character traits are you drawn to in people that, although compelling, can make for difficulties in relationships?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What do you most enjoy about being single? What do you most enjoy about being in a relationship?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "In what ways are you difficult to have a relationship with?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What do you regret about a past relationship?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What aspects of yourself do you worry might put off a prospective partner?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What sort of person do you tend to develop a crush on?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What have you argued about the most in relationships?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "love and relationships"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What do you wish you could be more relaxed about concerning sex?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "sex"
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What would your ideal pornography be like?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "sex"
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What items of clothing excite you the most?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "sex"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Describe an early sexual experience.",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "sex"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What are your deepest professional goals?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What would you tell yourself if you wanted to be kind and generous towards your failures?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Who or what might have stopped you from realising your full potential?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  }
+]
