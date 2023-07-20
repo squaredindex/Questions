@@ -85,7 +85,16 @@
                 infinite
                 duration="5000"
                 amount="200"
+                size="22"
                 fallDistance="100vh"
+                colorArray={[
+                    "#646cff",
+                    "#e549d2",
+                    "#ff3f90",
+                    "#ff6f4d",
+                    "#ff6f4d",
+                    "#ffa600"
+                ]}
             />
         </div>
     {/if}

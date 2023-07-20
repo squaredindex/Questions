@@ -77,10 +77,6 @@ body {
     color: #747bff;
   }
 
-  button {
-    background-color: #f9f9f9;
-  }
-
   svg {
     fill: var(--color-dark);
   }

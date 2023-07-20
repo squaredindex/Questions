@@ -1,9 +1,9 @@
 <script>
-    import { createEventDispatcher } from "svelte"
-    const dispatch = createEventDispatcher()
+    import { createEventDispatcher } from "svelte";
+    const dispatch = createEventDispatcher();
 
     function loadNewQuestion() {
-        dispatch("newQuestion")
+        dispatch("newQuestion");
     }
 </script>
 
@@ -40,6 +40,12 @@
             bottom: 1rem;
             padding: 1rem 2rem;
             width: calc(100% - 2rem);
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        button {
+            background-color: #f9f9f9;
         }
     }
 </style>
