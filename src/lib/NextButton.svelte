@@ -19,7 +19,7 @@
         border-radius: 8px;
         font-family: inherit;
         padding: 0.6em 1.2em;
-        background-color: #1a1a1a;
+        background-color: var(--color-dark);
         border: 1px solid transparent;
         transform: translate(-50%, 0);
         font-size: var(--font-size-md);
