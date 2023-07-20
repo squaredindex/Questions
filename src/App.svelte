@@ -1,10 +1,6 @@
-<script>
-  import Questions from './lib/Questions.svelte';
-</script>
+<script>import Questions from './lib/Questions.svelte'</script>
 
-<main>
-    <Questions />
-</main>
+<main><Questions /></main>
 
 <style>
   main {

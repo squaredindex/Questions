@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "question": "What have you leant from two people you've gone out with?",
+    "question": "What is the most important thing you have learned from previous relationships?",
     "difficulties": [
       "medium",
       "hard"
@@ -173,6 +173,168 @@
     "id": 16,
     "question": "Who or what might have stopped you from realising your full potential?",
     "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "When you look in the mirror, what's the first thing you check?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "What do you think you should laugh about more often?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "When did you last feel desperate?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Describe a simple pleasure that gives your life meaning.",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "What's the worst thing that could happen to you?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "When do you feel lonely?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "What makes you secretly suprisingly anxious?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Are you where you wanted to be at this stage in your life?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Who is your biggest fan?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 26,
+    "question": "What's the best evening you've ever had?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 27,
+    "question": "What would you like to be a bit more honest about with your friends?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Describe a memory of a taste or smell and what it evokes for you.",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Would you consider having psycotherapy and what would you hope to discover?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "What might people envy you for?",
+    "difficulties": [
+      "easy",
       "medium",
       "hard"
     ],
