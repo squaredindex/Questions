@@ -18,6 +18,7 @@
 - [ ] Curate the difficulty of these questions and update tags accordingly
 - [ ] Add nicer animations to game ending
 - [ ] Add [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility
+- [ ] Deploy live version
 
 ## Additional content
 - [ ] Add dating specific questions category
