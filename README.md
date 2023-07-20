@@ -8,7 +8,7 @@
 
 
 ## To-do
-- [ ] Add Inter font-family as local font
+- [ ] Add Inter font-family as local font -- [use vite-plugin-webfont-dl](https://github.com/feat-agency/vite-plugin-webfont-dl)?
 - [ ] Create custom icons for categories
 - [ ] Add the remaining 69 of 100 base questions (*not a joke, that's the real number*)
 - [ ] Add icons as icon components and display for the relevant categories
@@ -17,7 +17,8 @@
 - [ ] Allow the user to choose difficulty -- *should update questions reactively*
 - [ ] Curate the difficulty of these questions and update tags accordingly
 - [ ] Add nicer animations to game ending
-- [ ] Add [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility
+- [ ] Add/Configure PostCSS and [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility
+    - `pnpm i -D autoprefixer postcss`
 - [ ] Deploy live version
 
 ## Additional content
