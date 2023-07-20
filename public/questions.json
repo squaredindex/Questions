@@ -351,5 +351,135 @@
     "categories": [
       "self"
     ]
+  },
+  {
+    "id": 32,
+    "question": "Who has been a bad influence on you?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Who has been a bad influence on you?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "What are your best qualities?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "If you had to write a book, what would it be about?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Do you have a technique for dealing with despair?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Have you ever had a religious experience?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "What do you imagine poeple say when they gossip about you?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "What do you find most interesting about being with other people?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "What would you like to be teased about (nicely)?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Is there anything you regret not doing due to fear?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "In what respects are you still the same person you were as a child?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
   }
 ]
