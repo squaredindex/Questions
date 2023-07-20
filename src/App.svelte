@@ -4,7 +4,8 @@
 
 <style>
   main {
-    width: min(calc(100% - 2rem), 120ch);
+    width: min(100%, 120ch);
+    padding-inline: 1rem;
     margin: 0 auto;
   }
 </style>

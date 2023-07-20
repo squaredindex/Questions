@@ -120,6 +120,7 @@
 <style>
     .question {
         text-align: center;
+        width: 100%;
     }
 
     .question p {
