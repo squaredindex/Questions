@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte"
-    import { fade } from 'svelte/transition'
+    import { fade, slide } from 'svelte/transition'
     import { Confetti } from "svelte-confetti"
     import NextButton from "./NextButton.svelte"
     
@@ -82,8 +82,8 @@
 
 {#if currentQuestion}
     {#each [currentQuestion] as question (question)}
-        <div transition:fade={{ duration: 300, delay: 100 }} class="question">
-            <h2>{question}</h2>
+        <div transition:slide|local class="question">
+            <h2 transition:fade|local={{delay: 500}}>{question}</h2>
             <p class="{diff_class}">{displayDifficulty}</p>
         </div>
     {/each}
