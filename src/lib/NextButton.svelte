@@ -1,9 +1,9 @@
 <script>
-    import { createEventDispatcher } from "svelte";
-    const dispatch = createEventDispatcher();
+    import { createEventDispatcher } from "svelte"
+    const dispatch = createEventDispatcher()
 
     function loadNewQuestion() {
-        dispatch("newQuestion");
+        dispatch("newQuestion")
     }
 </script>
 
