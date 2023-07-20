@@ -1,12 +1,14 @@
 <script>
-    import { onMount } from "svelte"
-    import { fade } from "svelte/transition"
+    import { onMount } from "svelte";
+    import { fade } from "svelte/transition";
+    import { Confetti } from "svelte-confetti";
+    import NextButton from "./NextButton.svelte";
 
-    let currentQuestion = null
-    let currentQuestionId = null
-    let questions = []
-    let askedQuestionIds = []
-    let categories = [
+    let currentQuestion = null;
+    let currentQuestionId = null;
+    let questions = [];
+    let askedQuestionIds = [];
+    let selectedCategories = [
         "culture and taste",
         "family and friends",
         "life and death",
@@ -16,61 +18,87 @@
         "sex",
         "travel",
         "work and money",
-    ] // selected categories
-    let selectedDifficulties = ["easy", "medium", "hard"] // selected difficulties
-    let hasMoreQuestions = true
-    let showButton = false
-    let displayDifficulty = null
-    const difficultyMap = ["hard", "medium", "easy"]
+    ];
+    let selectedDifficulties = ["easy", "medium", "hard"];
+    let hasMoreQuestions = true;
+    let displayDifficulty = null;
+    const difficultyMap = ["hard", "medium", "easy"];
+
+    async function fetchQuestions() {
+        const res = await fetch("/questions.json");
+        return await res.json();
+    }
+
+    function filterQuestions() {
+        return questions.filter(
+            (q) =>
+                q.difficulties.some((diff) =>
+                    selectedDifficulties.includes(diff)
+                ) &&
+                q.categories.some((cat) => selectedCategories.includes(cat)) &&
+                !askedQuestionIds.includes(q.id)
+        );
+    }
+
+    function getRandomQuestion(questions) {
+        let randomIndex = Math.floor(Math.random() * questions.length);
+        return questions[randomIndex];
+    }
 
     onMount(async () => {
-        const res = await fetch("/questions.json")
-        questions = await res.json()
-        loadRandomQuestion()
-    })
+        questions = await fetchQuestions();
+        loadRandomQuestion();
+    });
 
     function loadRandomQuestion() {
-        let filteredQuestions = questions.filter(q => 
-            q.difficulties.some(diff => selectedDifficulties.includes(diff)) && 
-            q.categories.some(cat => categories.includes(cat)) &&
-            !askedQuestionIds.includes(q.id)
-        )
+        let filteredQuestions = filterQuestions();
 
         if (!filteredQuestions.length) {
-            currentQuestion = "You've answered all the questions! Aren't you a curious one..."
-            hasMoreQuestions = false
-            return
+            currentQuestion = "The first and simplest emotion which we discover in the human mind, is curiosity. - Edmund Burke";
+            displayDifficulty = "All questions complete"
+            hasMoreQuestions = false;
+            return;
         }
 
-        currentQuestion = null
+        currentQuestion = null;
 
-        setTimeout(_ => {
-            let randomIndex = Math.floor(Math.random() * filteredQuestions.length)
-            currentQuestion = filteredQuestions[randomIndex].question
-            currentQuestionId = filteredQuestions[randomIndex].id
-            askedQuestionIds.push(currentQuestionId)
-            showButton = true // Show the button after the first question appears
+        setTimeout(() => {
+            let randomQuestion = getRandomQuestion(filteredQuestions);
+            currentQuestion = randomQuestion.question;
+            currentQuestionId = randomQuestion.id;
+            askedQuestionIds.push(currentQuestionId);
 
             // Set the difficulty based on number of available difficulties
-            displayDifficulty = difficultyMap[filteredQuestions[randomIndex].difficulties.length - 1]
-        }, 300)
+            displayDifficulty =
+                difficultyMap[randomQuestion.difficulties.length - 1];
+        }, 300);
     }
 </script>
 
 {#if currentQuestion}
+    {#if !hasMoreQuestions}
+        <div class="confetti">
+            <Confetti
+                x={[-5, 5]}
+                y={[0, 0.1]}
+                delay={[500, 2000]}
+                infinite
+                duration="5000"
+                amount="200"
+                fallDistance="100vh"
+            />
+        </div>
+    {/if}
+
     <div class="question">
         <h2 transition:fade={{ duration: 300 }}>{currentQuestion}</h2>
-
-        {#if hasMoreQuestions}
-            <p>{displayDifficulty}</p>
-        {/if}
+        <p>{displayDifficulty}</p>
     </div>
 {/if}
 
-{#if showButton && hasMoreQuestions}
-    <button transition:fade={{ duration: 300 }} on:click={loadRandomQuestion}>Next Question</button>
+{#if hasMoreQuestions}
+    <NextButton on:newQuestion={loadRandomQuestion} />
 {/if}
-
 
 <style>
     .question {
@@ -78,26 +106,31 @@
     }
 
     .question p {
-        font-size: var(--font-size-base);
-        color: var(--color-primary);
-        text-transform: uppercase;
         font-weight: 800;
-        letter-spacing: .2ch;
+        letter-spacing: 0.2ch;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-size: var(--font-size-base);
     }
 
     h2 {
-        font-size: var(--font-size-xl);
         line-height: 1.2;
         text-wrap: balance;
         margin-block-end: 1rem;
+        font-size: var(--font-size-xl);
     }
 
-    button {
+    .confetti {
+        left: 0;
+        top: -50px;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        display: flex;
         position: fixed;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 4rem;
-        font-size: var(--font-size-md);
+        overflow: hidden;
+        pointer-events: none;
+        justify-content: center;
     }
 
     @media (width > 1200px) {
@@ -108,21 +141,15 @@
 
     @media (width < 500px) {
         h2 {
-            text-align: center;
-            font-size: var(--font-size-md);
+            text-wrap: wrap;
             line-height: 1.5;
             font-weight: 500;
-            text-wrap: wrap;
+            text-align: center;
+            font-size: var(--font-size-md);
         }
 
         .question p {
             font-size: var(--font-size-sm);
-        }
-
-        button {
-            bottom: 1rem;
-            padding: 1rem 2rem;
-            width: calc(100% - 2rem);
         }
     }
 </style>

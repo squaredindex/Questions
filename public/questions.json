@@ -26,7 +26,6 @@
     "id": 3,
     "question": "What kind of character traits are you drawn to in people that, although compelling, can make for difficulties in relationships?",
     "difficulties": [
-      "easy",
       "medium",
       "hard"
     ],
@@ -335,6 +334,17 @@
     "question": "What might people envy you for?",
     "difficulties": [
       "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "What are your bigget flaws?",
+    "difficulties": [
       "medium",
       "hard"
     ],
