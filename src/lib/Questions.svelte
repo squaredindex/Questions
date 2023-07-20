@@ -1,13 +1,13 @@
 <script>
-    import { onMount } from "svelte";
-    import { fade } from "svelte/transition";
-    import { Confetti } from "svelte-confetti";
-    import NextButton from "./NextButton.svelte";
+    import { onMount } from "svelte"
+    import { fade } from "svelte/transition"
+    import { Confetti } from "svelte-confetti"
+    import NextButton from "./NextButton.svelte"
 
-    let currentQuestion = null;
-    let currentQuestionId = null;
-    let questions = [];
-    let askedQuestionIds = [];
+    let currentQuestion = null
+    let currentQuestionId = null
+    let questions = []
+    let askedQuestionIds = []
     let selectedCategories = [
         "culture and taste",
         "family and friends",
@@ -18,15 +18,15 @@
         "sex",
         "travel",
         "work and money",
-    ];
-    let selectedDifficulties = ["easy", "medium", "hard"];
-    let hasMoreQuestions = true;
-    let displayDifficulty = null;
-    const difficultyMap = ["hard", "medium", "easy"];
+    ]
+    let selectedDifficulties = ["easy", "medium", "hard"]
+    let hasMoreQuestions = true
+    let displayDifficulty = null
+    const difficultyMap = ["hard", "medium", "easy"]
 
     async function fetchQuestions() {
-        const res = await fetch("/questions.json");
-        return await res.json();
+        const res = await fetch("/questions.json")
+        return await res.json()
     }
 
     function filterQuestions() {
@@ -37,41 +37,41 @@
                 ) &&
                 q.categories.some((cat) => selectedCategories.includes(cat)) &&
                 !askedQuestionIds.includes(q.id)
-        );
+        )
     }
 
     function getRandomQuestion(questions) {
-        let randomIndex = Math.floor(Math.random() * questions.length);
-        return questions[randomIndex];
+        let randomIndex = Math.floor(Math.random() * questions.length)
+        return questions[randomIndex]
     }
 
     onMount(async () => {
-        questions = await fetchQuestions();
-        loadRandomQuestion();
-    });
+        questions = await fetchQuestions()
+        loadRandomQuestion()
+    })
 
     function loadRandomQuestion() {
-        let filteredQuestions = filterQuestions();
+        let filteredQuestions = filterQuestions()
 
         if (!filteredQuestions.length) {
-            currentQuestion = "The first and simplest emotion which we discover in the human mind, is curiosity. - Edmund Burke";
+            currentQuestion = "The first and simplest emotion which we discover in the human mind, is curiosity. - Edmund Burke"
             displayDifficulty = "All questions complete"
-            hasMoreQuestions = false;
-            return;
+            hasMoreQuestions = false
+            return
         }
 
-        currentQuestion = null;
+        currentQuestion = null
 
         setTimeout(() => {
-            let randomQuestion = getRandomQuestion(filteredQuestions);
-            currentQuestion = randomQuestion.question;
-            currentQuestionId = randomQuestion.id;
-            askedQuestionIds.push(currentQuestionId);
+            let randomQuestion = getRandomQuestion(filteredQuestions)
+            currentQuestion = randomQuestion.question
+            currentQuestionId = randomQuestion.id
+            askedQuestionIds.push(currentQuestionId)
 
             // Set the difficulty based on number of available difficulties
             displayDifficulty =
-                difficultyMap[randomQuestion.difficulties.length - 1];
-        }, 300);
+                difficultyMap[randomQuestion.difficulties.length - 1]
+        }, 300)
     }
 </script>
 
