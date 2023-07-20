@@ -8,16 +8,16 @@
 
 
 ## To-do
+- [ ] Add Inter font-family as local font
 - [ ] Create custom icons for categories
+- [ ] Add the remaining 69 of 100 base questions (*not a joke, that's the real number*)
 - [ ] Add icons as icon components and display for the relevant categories
-- [ ] Add nicer animations to game ending
 - [ ] Add settings menu
 - [ ] Allow the user to choose categories -- *should update questions reactively*
 - [ ] Allow the user to choose difficulty -- *should update questions reactively*
-- [ ] Add the remaining 69 of 100 base questions (*not a joke, that's the real number*)
 - [ ] Curate the difficulty of these questions and update tags accordingly
+- [ ] Add nicer animations to game ending
 - [ ] Add [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility
-- [ ] 
 
 ## Additional content
 - [ ] Add dating specific questions category
