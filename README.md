@@ -8,22 +8,29 @@
 
 
 ## To-do
+**CORE FUNCTIONALITY**
 - [x] ~~Add Inter font-family as local font -- [use vite-plugin-webfont-dl](https://github.com/feat-agency/vite-plugin-webfont-dl)~~
-- [ ] Create custom icons for categories
-- [ ] Add first 100 base questions
-- [ ] Add icons as icon components and display for the relevant categories
 - [ ] Add settings menu
 - [ ] Allow the user to choose categories -- *should update questions reactively*
 - [ ] Allow the user to choose difficulty -- *should update questions reactively*
-- [ ] Curate the difficulty of these questions and update tags accordingly
-- [ ] Add a **restart** button to the ending screen
-- [x] ~~Add nicer animations to game ending~~
-- [ ] Add/Configure PostCSS and [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility
-    - `pnpm i -D autoprefixer postcss`
+- [ ] Add a **restart** button to the ending screen -- this should reset the state of the game clearing all `askedQuestionIds`
+- [ ] Add/Configure PostCSS and [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility - `pnpm i -D autoprefixer postcss`
 - [ ] Deploy live version
 
-## Additional content
+**GAMEPLAY**
+- [ ] Add first 100 base questions
+- [ ] Curate the difficulty of these questions and update tags accordingly
+
+
+**Additional**
 - [ ] Add dating specific questions category
 - [ ] Add couples questions category
+
+
+**NICE TO HAVE**
+- [ ] Add icons as icon components and display for the relevant categories
+- [ ] Create custom icons for categories
+- [x] ~~Add nicer animations to game ending~~
+
 
 In the future it might be interesting to move this over to [SvelteKit](https://kit.svelte.dev/) and make it more of a real-time multiplayer experience, however, right now it's mainly something you can use in person as an alternative to having the sort of physical prompt cards School of Life does.

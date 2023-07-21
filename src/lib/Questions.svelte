@@ -12,10 +12,10 @@
         "culture and taste",
         "family and friends",
         "life and death",
-        // "love and relationships",
+        "love and relationships",
         "personality and emotions",
         "self",
-        // "sex",
+        "sex",
         "travel",
         "work and money",
     ]
