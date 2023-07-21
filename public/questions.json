@@ -365,7 +365,7 @@
     ]
   },
   {
-    "id": 32,
+    "id": 33,
     "question": "Who has been a bad influence on you?",
     "difficulties": [
       "easy",
@@ -377,7 +377,7 @@
     ]
   },
   {
-    "id": 33,
+    "id": 34,
     "question": "What are your best qualities?",
     "difficulties": [
       "easy",
@@ -389,7 +389,7 @@
     ]
   },
   {
-    "id": 34,
+    "id": 35,
     "question": "If you had to write a book, what would it be about?",
     "difficulties": [
       "easy",
@@ -401,7 +401,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 36,
     "question": "Do you have a technique for dealing with despair?",
     "difficulties": [
       "medium",
@@ -412,7 +412,7 @@
     ]
   },
   {
-    "id": 36,
+    "id": 37,
     "question": "Have you ever had a religious experience?",
     "difficulties": [
       "easy",
@@ -424,7 +424,7 @@
     ]
   },
   {
-    "id": 37,
+    "id": 38,
     "question": "What do you imagine poeple say when they gossip about you?",
     "difficulties": [
       "medium",
@@ -435,7 +435,7 @@
     ]
   },
   {
-    "id": 37,
+    "id": 39,
     "question": "What do you find most interesting about being with other people?",
     "difficulties": [
       "easy",
@@ -447,7 +447,7 @@
     ]
   },
   {
-    "id": 38,
+    "id": 40,
     "question": "What would you like to be teased about (nicely)?",
     "difficulties": [
       "easy",
@@ -459,7 +459,7 @@
     ]
   },
   {
-    "id": 39,
+    "id": 41,
     "question": "Is there anything you regret not doing due to fear?",
     "difficulties": [
       "easy",
@@ -471,8 +471,153 @@
     ]
   },
   {
-    "id": 40,
+    "id": 42,
     "question": "In what respects are you still the same person you were as a child?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "When was the last time you experienced 'Schadenfreude' (pleasure at the misfortune of others)?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Describe a time when you acted without 100% integrity.",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "What might make you to sulk?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Are you competitive? What brings it out in you?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "If you allowed yourself to be more selfish, what would you do?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "What makes you shy?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "What are you addicted to (other than your phone)?.",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "What makes you envious?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "What's something from your past that you're still embarrassed about?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 52,
+    "question": "What's something from your past that you're still embarrassed about?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "What would you do if you couldn't fail?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Would you rather have a view of the ocean or the desert - and why?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Have you ever travelled alone?",
     "difficulties": [
       "easy",
       "medium",

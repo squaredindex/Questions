@@ -27,7 +27,7 @@
 - [ ] Add couples questions category
 
 
-**NICE TO HAVE**
+**NICE-TO-HAVE**
 - [ ] Add icons as icon components and display for the relevant categories
 - [ ] Create custom icons for categories
 - [x] ~~Add nicer animations to game ending~~
