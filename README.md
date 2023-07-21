@@ -19,7 +19,7 @@
 
 **GAMEPLAY**
 - [ ] Add first 100 base questions
-- [ ] Curate the difficulty of these questions and update tags accordingly
+- [ ] Curate the difficulty of these questions and update tags accordingly -- This is somewhat subjective, so I welcome suggestions on this
 
 
 **Additional**
