@@ -484,9 +484,8 @@
   },
   {
     "id": 43,
-    "question": "When was the last time you experienced 'Schadenfreude' (pleasure at the misfortune of others)?",
+    "question": "When was the last time you experienced 'Schadenfreude'?",
     "difficulties": [
-      "medium",
       "hard"
     ],
     "categories": [
@@ -584,17 +583,7 @@
   },
   {
     "id": 52,
-    "question": "What's something from your past that you're still embarrassed about?",
-    "difficulties": [
-      "hard"
-    ],
-    "categories": [
-      "personality and emotions"
-    ]
-  },
-  {
-    "id": 53,
-    "question": "What would you do if you couldn't fail?",
+    "question": "What would you do next if you couldn't fail?",
     "difficulties": [
       "medium",
       "hard"
@@ -604,7 +593,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 53,
     "question": "Would you rather have a view of the ocean or the desert - and why?",
     "difficulties": [
       "easy",
@@ -616,7 +605,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 54,
     "question": "Have you ever travelled alone?",
     "difficulties": [
       "easy",
