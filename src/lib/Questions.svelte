@@ -175,6 +175,7 @@
             font-weight: 500;
             text-align: center;
             font-size: var(--font-size-md);
+            margin-block-end: 0.5rem;
         }
 
         .question p {
