@@ -18,7 +18,7 @@
 - [ ] Deploy live version
 
 **GAMEPLAY**
-- [ ] Add first 100 base questions
+- [x] ~~Add first 100 base questions~~
 - [ ] Curate the difficulty of these questions and update tags accordingly -- This is somewhat subjective, so I welcome suggestions on this
 
 
@@ -30,6 +30,7 @@
 **NICE-TO-HAVE**
 - [ ] Add icons as icon components and display for the relevant categories
 - [ ] Create custom icons for categories
+- [ ] Add manual control for dark/light mode rather than using system setting
 - [x] ~~Add nicer animations to game ending~~
 
 

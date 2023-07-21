@@ -35,7 +35,7 @@
   },
   {
     "id": 4,
-    "question": "What's your favorite part of being single? What do you love most about being in a relationship?",
+    "question": "What's your favourite part of being single? What do you love most about being in a relationship?",
     "difficulties": [
       "easy",
       "medium",
@@ -170,6 +170,16 @@
   },
   {
     "id": 16,
+    "question": "In what areas are you less mature than you might be?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 17,
     "question": "Who or what might have stopped you from realising your full potential?",
     "difficulties": [
       "medium",
@@ -180,7 +190,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 18,
     "question": "When you look in the mirror, what's the first thing you check?",
     "difficulties": [
       "easy",
@@ -192,7 +202,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 19,
     "question": "What do you think you should laugh about more often?",
     "difficulties": [
       "easy",
@@ -204,7 +214,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 20,
     "question": "When did you last feel desperate?",
     "difficulties": [
       "easy",
@@ -216,7 +226,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 21,
     "question": "Describe a simple pleasure that gives your life meaning.",
     "difficulties": [
       "easy",
@@ -228,7 +238,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 22,
     "question": "What's the worst thing that could happen to you?",
     "difficulties": [
       "medium",
@@ -239,7 +249,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 23,
     "question": "When do you feel lonely?",
     "difficulties": [
       "medium",
@@ -250,8 +260,8 @@
     ]
   },
   {
-    "id": 23,
-    "question": "What makes you secretly suprisingly anxious?",
+    "id": 24,
+    "question": "What makes you secretly surprisingly anxious?",
     "difficulties": [
       "easy",
       "medium",
@@ -262,7 +272,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 25,
     "question": "Are you where you wanted to be at this stage in your life?",
     "difficulties": [
       "medium",
@@ -273,7 +283,19 @@
     ]
   },
   {
-    "id": 25,
+    "id": 26,
+    "question": "What activity makes you feel the most confident in yourself when engaged in it?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 27,
     "question": "Who is your biggest fan?",
     "difficulties": [
       "easy",
@@ -285,7 +307,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 28,
     "question": "What's the best evening you've ever had?",
     "difficulties": [
       "medium",
@@ -296,7 +318,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 29,
     "question": "What would you like to be a bit more honest about with your friends?",
     "difficulties": [
       "hard"
@@ -306,7 +328,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 30,
     "question": "Describe a memory of a taste or smell and what it evokes for you.",
     "difficulties": [
       "easy",
@@ -318,8 +340,8 @@
     ]
   },
   {
-    "id": 29,
-    "question": "Would you consider having psycotherapy and what would you hope to discover?",
+    "id": 31,
+    "question": "Would you consider having psychotherapy and what would you hope to discover?",
     "difficulties": [
       "easy",
       "medium",
@@ -330,7 +352,7 @@
     ]
   },
   {
-    "id": 30,
+    "id": 32,
     "question": "What might people envy you for?",
     "difficulties": [
       "easy",
@@ -342,33 +364,9 @@
     ]
   },
   {
-    "id": 31,
-    "question": "What are your bigget flaws?",
-    "difficulties": [
-      "medium",
-      "hard"
-    ],
-    "categories": [
-      "self"
-    ]
-  },
-  {
-    "id": 32,
-    "question": "Who has been a bad influence on you?",
-    "difficulties": [
-      "easy",
-      "medium",
-      "hard"
-    ],
-    "categories": [
-      "self"
-    ]
-  },
-  {
     "id": 33,
-    "question": "Who has been a bad influence on you?",
+    "question": "What are your biggest flaws?",
     "difficulties": [
-      "easy",
       "medium",
       "hard"
     ],
@@ -378,7 +376,7 @@
   },
   {
     "id": 34,
-    "question": "What are your best qualities?",
+    "question": "Who has been a bad influence on you?",
     "difficulties": [
       "easy",
       "medium",
@@ -390,7 +388,7 @@
   },
   {
     "id": 35,
-    "question": "If you had to write a book, what would it be about?",
+    "question": "What are your best qualities?",
     "difficulties": [
       "easy",
       "medium",
@@ -402,6 +400,18 @@
   },
   {
     "id": 36,
+    "question": "If you had to write a book, what would it be about?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "self"
+    ]
+  },
+  {
+    "id": 37,
     "question": "Do you have a technique for dealing with despair?",
     "difficulties": [
       "medium",
@@ -412,7 +422,7 @@
     ]
   },
   {
-    "id": 37,
+    "id": 38,
     "question": "Have you ever had a religious experience?",
     "difficulties": [
       "easy",
@@ -424,10 +434,9 @@
     ]
   },
   {
-    "id": 38,
-    "question": "What do you imagine poeple say when they gossip about you?",
+    "id": 39,
+    "question": "What do you imagine people say when they gossip about you?",
     "difficulties": [
-      "medium",
       "hard"
     ],
     "categories": [
@@ -435,7 +444,7 @@
     ]
   },
   {
-    "id": 39,
+    "id": 40,
     "question": "What do you find most interesting about being with other people?",
     "difficulties": [
       "easy",
@@ -447,7 +456,18 @@
     ]
   },
   {
-    "id": 40,
+    "id": 41,
+    "question": "What 'grown-up' thing do you still not know how to do?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "personality and emotions"
+    ]
+  },
+  {
+    "id": 42,
     "question": "What would you like to be teased about (nicely)?",
     "difficulties": [
       "easy",
@@ -459,10 +479,9 @@
     ]
   },
   {
-    "id": 41,
+    "id": 43,
     "question": "Is there anything you regret not doing due to fear?",
     "difficulties": [
-      "easy",
       "medium",
       "hard"
     ],
@@ -471,10 +490,9 @@
     ]
   },
   {
-    "id": 42,
+    "id": 44,
     "question": "In what respects are you still the same person you were as a child?",
     "difficulties": [
-      "easy",
       "medium",
       "hard"
     ],
@@ -483,7 +501,7 @@
     ]
   },
   {
-    "id": 43,
+    "id": 45,
     "question": "When was the last time you experienced 'Schadenfreude'?",
     "difficulties": [
       "hard"
@@ -493,7 +511,7 @@
     ]
   },
   {
-    "id": 44,
+    "id": 46,
     "question": "Describe a time when you acted without 100% integrity.",
     "difficulties": [
       "hard"
@@ -503,8 +521,8 @@
     ]
   },
   {
-    "id": 45,
-    "question": "What might make you to sulk?",
+    "id": 47,
+    "question": "What might make you sulk?",
     "difficulties": [
       "medium",
       "hard"
@@ -514,7 +532,7 @@
     ]
   },
   {
-    "id": 46,
+    "id": 48,
     "question": "Are you competitive? What brings it out in you?",
     "difficulties": [
       "easy",
@@ -526,7 +544,7 @@
     ]
   },
   {
-    "id": 47,
+    "id": 49,
     "question": "If you allowed yourself to be more selfish, what would you do?",
     "difficulties": [
       "easy",
@@ -538,7 +556,7 @@
     ]
   },
   {
-    "id": 48,
+    "id": 50,
     "question": "What makes you shy?",
     "difficulties": [
       "easy",
@@ -550,8 +568,8 @@
     ]
   },
   {
-    "id": 49,
-    "question": "What are you addicted to (other than your phone)?.",
+    "id": 51,
+    "question": "What are you a bit addicted to (other than your phone)?",
     "difficulties": [
       "medium",
       "hard"
@@ -561,7 +579,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 52,
     "question": "What makes you envious?",
     "difficulties": [
       "medium",
@@ -572,7 +590,7 @@
     ]
   },
   {
-    "id": 51,
+    "id": 53,
     "question": "What's something from your past that you're still embarrassed about?",
     "difficulties": [
       "hard"
@@ -582,7 +600,7 @@
     ]
   },
   {
-    "id": 52,
+    "id": 54,
     "question": "What would you do next if you couldn't fail?",
     "difficulties": [
       "medium",
@@ -593,7 +611,7 @@
     ]
   },
   {
-    "id": 53,
+    "id": 55,
     "question": "Would you rather have a view of the ocean or the desert - and why?",
     "difficulties": [
       "easy",
@@ -605,7 +623,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 56,
     "question": "Have you ever travelled alone?",
     "difficulties": [
       "easy",
@@ -617,7 +635,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 57,
     "question": "Are there mistakes you make every time you travel?",
     "difficulties": [
       "medium",
@@ -628,7 +646,7 @@
     ]
   },
   {
-    "id": 56,
+    "id": 58,
     "question": "What makes someone a good travelling companion?",
     "difficulties": [
       "medium",
@@ -639,7 +657,7 @@
     ]
   },
   {
-    "id": 57,
+    "id": 59,
     "question": "If you had to live somewhere else, where would it be?",
     "difficulties": [
       "medium",
@@ -648,9 +666,9 @@
     "categories": [
       "travel"
     ]
-  }
+  },
   {
-    "id": 58,
+    "id": 60,
     "question": "If you had to choose between a good meal and a good hotel, which would you choose?",
     "difficulties": [
       "easy",
@@ -662,7 +680,7 @@
     ]
   },
   {
-    "id": 59,
+    "id": 61,
     "question": "Would you rather live a nomadic or settled life?",
     "difficulties": [
       "easy",
@@ -674,7 +692,7 @@
     ]
   },
   {
-    "id": 60,
+    "id": 62,
     "question": "What do you still want to do before you die?",
     "difficulties": [
       "easy",
@@ -686,13 +704,419 @@
     ]
   },
   {
-    "id": 61,
+    "id": 63,
     "question": "At what age does someone become stop being less attractive to you?",
     "difficulties": [
       "hard"
     ],
     "categories": [
       "life and death"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "What is something you would like to tell someone that's since passed away?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "life and death"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "If you only had a year left to live, what would you do?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "life and death"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "What were you working on the last time you lost track of time completely?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "When asked what job you wanted as a child, what did you say?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "What's the most useful career advice you've ever been given?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "How do you sabotage your own success?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "In what ways might you be difficult to work with or for?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Who's the best boss you've ever had and why?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Would you rather have a happy home life and mediocre career, or a successful career and mediocre home life?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "In what ways has life treated you unfairly?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 74,
+    "question": "You've won the lottery. What's the first thing you do?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 75,
+    "question": "What supposedly worthy cause do you secretly think is a waste of time?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 76,
+    "question": "How have your political views changed over time?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "What are your hang-ups about money?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 78,
+    "question": "What is the weirdest job you'd secretly love to try?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "work and money"
+    ]
+  },
+  {
+    "id": 79,
+    "question": "What would you like to tell your parents that you've never been able to?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 80,
+    "question": "Which close relative do you like the least - and why?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 81,
+    "question": "What don't your parents understand about you?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 82,
+    "question": "What are the most valuable traits, values, or skills you've inherited or learned from your parents?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 83,
+    "question": "What parts of your early life are you compensating for now?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 84,
+    "question": "What are your happiest memories of your parents?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Of the people you spend time with, who brings out your best qualities?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 86,
+    "question": "Tell us a secret you've been longing to get off your chest.",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 87,
+    "question": "What's the kindest thing anyone's ever done for you?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 88,
+    "question": "Who has been an important mentor to you and what did they teach you?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 89,
+    "question": "Is there anyone you regret losing touch with?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 90,
+    "question": "What two people from your life would you be reluctant to introduce to each other?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "family and friends"
+    ]
+  },
+  {
+    "id": 91,
+    "question": "If forced to write a poem, what might be the first two lines?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 92,
+    "question": "What work of literature or art has most influenced your life?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 93,
+    "question": "What sort of animal do you most identify with and why?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 94,
+    "question": "What's your most embarrassing or surprising taste in music, books, films or food?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 95,
+    "question": "Describe a piece of art that you really like and why.",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 96,
+    "question": "What music has influenced your attitude to life the most?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 97,
+    "question": "If you could only have one medium, which would you choose: art, film, music, or literature?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 98,
+    "question": "What kind of things do you consider 'bad taste' and why?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 99,
+    "question": "If you could own any work of art, what would it be and why?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
+    ]
+  },
+  {
+    "id": 100,
+    "question": "Can you describe your taste in interior design?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "culture and taste"
     ]
   }
 ]
