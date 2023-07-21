@@ -62,7 +62,7 @@
         let filteredQuestions = filterQuestions()
 
         if (!filteredQuestions.length) {
-            currentQuestion = "The first and simplest emotion which we discover in the human mind, is curiosity. - Edmund Burke"
+            currentQuestion = "By replacing fear of the unknown with curiosity we open ourselves up to an infinite stream of possibility. - Alan Watts"
             displayDifficulty = "All questions complete"
             hasMoreQuestions = false
             return
@@ -82,12 +82,11 @@
 
 {#if currentQuestion}
     {#each [currentQuestion] as question (question)}
-        <div transition:slide|local class="question">
-            <h2 transition:fade|local={{delay: 500}}>{question}</h2>
-            <p class="{diff_class}">{displayDifficulty}</p>
+        <div transition:slide={{duration: 500}} class="question">
+            <h2 transition:fade={{delay: 500}}>{question}</h2>
+            <p transition:slide={{delay: 600, axis: 'y', }} class="{diff_class}">{displayDifficulty}</p>
         </div>
     {/each}
-
 {/if}
 
 
@@ -105,12 +104,11 @@
             size="22"
             fallDistance="100vh"
             colorArray={[
-                "#646cff",
-                "#e549d2",
-                "#ff3f90",
-                "#ff6f4d",
-                "#ff6f4d",
-                "#ffa600",
+                "var(--color-primary)",
+                "var(--color-orchid)",
+                "var(--color-wild-strawberry)",
+                "var(--color-persimmon)",
+                "var(--color-web-orange)",
             ]}
         />
     </div>
