@@ -601,7 +601,7 @@
       "hard"
     ],
     "categories": [
-      "personality and emotions"
+      "travel"
     ]
   },
   {
@@ -613,7 +613,86 @@
       "hard"
     ],
     "categories": [
-      "personality and emotions"
+      "travel"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Are there mistakes you make every time you travel?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "travel"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "What makes someone a good travelling companion?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "travel"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "If you had to live somewhere else, where would it be?",
+    "difficulties": [
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "travel"
+    ]
+  }
+  {
+    "id": 58,
+    "question": "If you had to choose between a good meal and a good hotel, which would you choose?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "travel"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Would you rather live a nomadic or settled life?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "travel"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "What do you still want to do before you die?",
+    "difficulties": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "categories": [
+      "life and death"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "At what age does someone become stop being less attractive to you?",
+    "difficulties": [
+      "hard"
+    ],
+    "categories": [
+      "life and death"
     ]
   }
 ]
