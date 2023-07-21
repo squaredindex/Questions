@@ -10,7 +10,7 @@
 ## To-do
 - [x] ~~Add Inter font-family as local font -- [use vite-plugin-webfont-dl](https://github.com/feat-agency/vite-plugin-webfont-dl)~~
 - [ ] Create custom icons for categories
-- [ ] Add the remaining 60 of 100 base questions
+- [ ] Add first 100 base questions
 - [ ] Add icons as icon components and display for the relevant categories
 - [ ] Add settings menu
 - [ ] Allow the user to choose categories -- *should update questions reactively*
