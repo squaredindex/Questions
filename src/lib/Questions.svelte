@@ -12,10 +12,10 @@
         "culture and taste",
         "family and friends",
         "life and death",
-        "love and relationships",
+        // "love and relationships",
         "personality and emotions",
         "self",
-        "sex",
+        // "sex",
         "travel",
         "work and money",
     ]
@@ -146,6 +146,7 @@
         text-wrap: balance;
         margin-block-end: 1rem;
         font-size: var(--font-size-xl);
+        color: var(--color-text-primary);
     }
 
     .confetti {

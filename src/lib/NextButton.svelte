@@ -18,12 +18,14 @@
         font-weight: 500;
         border-radius: 8px;
         font-family: inherit;
-        padding: 0.6em 1.2em;
-        background-color: var(--color-dark);
+        padding: 1rem 2rem;
+        background-color: #131328;
+        color: var(--color-text-primary);
         border: 1px solid transparent;
         transform: translate(-50%, 0);
         font-size: var(--font-size-md);
         transition: border-color 0.25s;
+        text-transform: capitalize;
     }
 
     button:hover {
@@ -45,7 +47,13 @@
 
     @media (prefers-color-scheme: light) {
         button {
-            background-color: #f9f9f9;
+            background: var(--color-secondary);
+            color: #2d2a4a;
+        }
+
+        button:focus,
+        button:focus-visible {
+            outline: 4px auto var(--color-primary-tint);
         }
     }
 </style>

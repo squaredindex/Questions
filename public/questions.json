@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "In what ways have your parents influenced your choice of partners?",
+    "question": "How have your parents influenced your choice of partners?",
     "difficulties": [
       "easy",
       "medium",
@@ -24,7 +24,7 @@
   },
   {
     "id": 3,
-    "question": "What kind of character traits are you drawn to in people that, although compelling, can make for difficulties in relationships?",
+    "question": "What traits do you find attractive in someone that can also lead to problems in your relationship?",
     "difficulties": [
       "medium",
       "hard"
@@ -35,7 +35,7 @@
   },
   {
     "id": 4,
-    "question": "What do you most enjoy about being single? What do you most enjoy about being in a relationship?",
+    "question": "What's your favorite part of being single? What do you love most about being in a relationship?",
     "difficulties": [
       "easy",
       "medium",
@@ -47,7 +47,7 @@
   },
   {
     "id": 5,
-    "question": "In what ways are you difficult to have a relationship with?",
+    "question": "How might you be challenging to be in a relationship with?",
     "difficulties": [
       "medium",
       "hard"
@@ -80,7 +80,7 @@
   },
   {
     "id": 8,
-    "question": "What sort of person do you tend to develop a crush on?",
+    "question": "What type of person do you tend to get a crush on?",
     "difficulties": [
       "easy",
       "medium",
@@ -92,7 +92,7 @@
   },
   {
     "id": 9,
-    "question": "What have you argued about the most in relationships?",
+    "question": "What have you argued most about in relationships?",
     "difficulties": [
       "medium",
       "hard"

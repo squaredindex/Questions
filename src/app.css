@@ -1,18 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
 
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -22,7 +9,11 @@
   --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
-  --color-dark: #1a1a1a;
+  --color-bg: #262436;
+  --color-text-primary: hsla(0, 0%, 100%, 0.95);
+
+  --color-secondary: hsl(237, 20%, 90%);
+
   --color-primary: #646cff;
   --color-primary-tint: #8681ff;
   /* Colour names from https://chir.ag/projects/name-that-color */
@@ -80,16 +71,27 @@ a:hover {
 body {
   margin: 0;
   display: grid;
-  place-items: center;
+  line-height: 1.5;
+  font-weight: 400;
   min-height: 100vh;
   min-height: 100dvh;
+  place-items: center;
+  color-scheme: light;
+  font-synthesis: none;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: var(--color-dark);
-    background-color: #fff;
+    --color-bg: #fff;
+    --color-text-primary: hsla(0, 0%, 0%, 0.95);
   }
 
   svg {
