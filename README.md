@@ -14,7 +14,7 @@
 - [ ] Allow the user to choose categories -- *should update questions reactively*
 - [ ] Allow the user to choose difficulty -- *should update questions reactively*
 - [ ] Add a **restart** button to the ending screen -- this should reset the state of the game clearing all `askedQuestionIds`
-- [ ] Add/Configure PostCSS and [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility - `pnpm i -D autoprefixer postcss`
+- [x] ~~Add/Configure PostCSS and [autoprefixer](https://www.npmjs.com/package/autoprefixer) to ensure better browser compatibility~~
 - [ ] Deploy live version
 
 **GAMEPLAY**
