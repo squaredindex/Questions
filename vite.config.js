@@ -8,10 +8,9 @@ export default defineConfig({
     svelte(),
     webfontDownload()
   ],
-  // Add this after installing `autoprefixer` and `postcss`
-  // css: {
-  //   postcss: {
-  //     plugins: [autoprefixer],
-  //   },
-  // },
+  css: {
+    postcss: {
+      postcss: 'postcss.config.js'
+    },
+  },
 })
