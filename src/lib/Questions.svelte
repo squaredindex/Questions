@@ -3,7 +3,18 @@
     import { fade, slide } from 'svelte/transition'
     import { Confetti } from "svelte-confetti"
     import NextButton from "./NextButton.svelte"
-    
+    import { storeValue } from "../store"
+
+    let storeMessage
+
+    storeValue.subscribe(value => {
+        storeMessage = value
+    })
+
+    function updateStoreMessage() {
+        storeValue.set("Updated store message")
+    }
+
     let currentQuestion = null
     let currentQuestionId = null
     let questions = []
@@ -80,6 +91,9 @@
     }
 </script>
 
+<!-- <h1>{storeMessage}</h1>
+<button on:click={updateStoreMessage}>Update store message</button> -->
+
 {#if currentQuestion}
     {#each [currentQuestion] as question (question)}
         <div transition:slide={{duration: 500}} class="question">
@@ -102,7 +116,7 @@
             duration="5000"
             amount="200"
             size="22"
-            fallDistance="100vh"
+            fallDistance="100dvh"
             colorArray={[
                 "var(--color-primary)",
                 "var(--color-orchid)",
