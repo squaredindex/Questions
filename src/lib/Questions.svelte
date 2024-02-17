@@ -44,17 +44,15 @@
 
     function filterQuestions() {
         return questions.filter(question => {
-            const hasSelectedDifficulty = question.difficulties.some(difficulty =>
-                selectedDifficulties.includes(difficulty)
-            )
+            const hasSelectedDifficulty = question.difficulties.some(difficulty => selectedDifficulties.includes(difficulty))
 
-            const hasSelectedCategory = question.categories.some(category =>
-                selectedCategories.includes(category)
-            )
+            const hasSelectedCategory = question.categories.some(category => selectedCategories.includes(category))
 
             const hasNotBeenAsked = !askedQuestionIds.includes(question.id)
 
-            return hasSelectedDifficulty && hasSelectedCategory && hasNotBeenAsked
+            const eligibleQuestions = hasSelectedDifficulty && hasSelectedCategory && hasNotBeenAsked;
+
+            return eligibleQuestions;
         })
     }
 
