@@ -109,18 +109,18 @@
         <Confetti
             x={[-5, 5]}
             y={[0, 0.1]}
-            delay={[500, 2000]}
-            infinite
-            duration={5000}
             amount={200}
-            size={22}
+            delay={[500, 2000]}
+            duration={5000}
             fallDistance="100dvh"
+            infinite
+            size={22}
             colorArray={[
-                "var(--color-primary)",
                 "var(--color-orchid)",
-                "var(--color-wild-strawberry)",
                 "var(--color-persimmon)",
+                "var(--color-primary)",
                 "var(--color-web-orange)",
+                "var(--color-wild-strawberry)",
             ]}
         />
     </div>
