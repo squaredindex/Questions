@@ -38,8 +38,10 @@
 	$: diff_class = displayDifficulty
 
     async function fetchQuestions() {
-        const res = await fetch("/questions.json")
-        return await res.json()
+        const basePath = import.meta.env.BASE_URL
+        const res = await fetch(`${basePath}questions.json`)
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
     }
 
     function filterQuestions() {
@@ -186,8 +188,8 @@
             line-height: 1.5;
             font-weight: 500;
             text-align: center;
-            font-size: var(--font-size-md);
             margin-block-end: 0.5rem;
+            font-size: var(--font-size-md);
         }
 
         .question p {
