@@ -22,15 +22,15 @@
     let questions = []
     let askedQuestionIds = []
     let selectedCategories = [
-        // "culture and taste",
-        // "family and friends",
-        // "life and death",
-        // "love and relationships",
-        // "personality and emotions",
+        "culture and taste",
+        "family and friends",
+        "life and death",
+        "love and relationships",
+        "personality and emotions",
         "self",
         // "sex",
-        // "travel",
-        // "work and money",
+        "travel",
+        "work and money",
     ]
     let selectedDifficulties = ["easy", "medium", "hard"]
     let hasMoreQuestions = true
