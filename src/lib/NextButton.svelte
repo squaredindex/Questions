@@ -17,15 +17,15 @@
         position: fixed;
         font-weight: 500;
         border-radius: 8px;
-        font-family: inherit;
         padding: 1rem 2rem;
+        font-family: inherit;
         background-color: #131328;
-        color: var(--color-text-primary);
+        text-transform: capitalize;
         border: 1px solid transparent;
         transform: translate(-50%, 0);
         font-size: var(--font-size-md);
         transition: border-color 0.25s;
-        text-transform: capitalize;
+        color: var(--color-text-primary);
     }
 
     button:hover {

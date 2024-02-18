@@ -13,7 +13,7 @@
 <button in:fade={{duration: 500}} on:click={loadIframe} class="youtube-lazy-load" class:background-video={backgroundVideo} aria-label="Click to load the video" tabindex="0">
     {#if iframeLoaded}
         <iframe
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0`}
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&loop=1`}
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -33,7 +33,6 @@
         place-items: center;
         aspect-ratio: 16/9;
         width: 100%;
-        border-radius: .5rem;
         background-color: black;
         overflow: hidden;
     }
@@ -67,7 +66,7 @@
         width: 100%;
         display: grid;
         place-items: center;
-        z-index: -1;
+        z-index: 0;
     }
 
     .background-video iframe {

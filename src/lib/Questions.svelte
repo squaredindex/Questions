@@ -39,11 +39,11 @@
 	
 	$: diff_class = displayDifficulty
 
-    $: {
-        if (!hasMoreQuestions && youtubeComponent) {
-            youtubeComponent.loadIframe();
-        }
-    }
+    // $: {
+    //     if (!hasMoreQuestions && youtubeComponent) {
+    //         youtubeComponent.loadIframe();
+    //     }
+    // }
 
     async function fetchQuestions() {
         const basePath = import.meta.env.BASE_URL
@@ -97,9 +97,15 @@
         // Set the difficulty based on number of available difficulties
         displayDifficulty = difficultyMap[randomQuestion.difficulties.length - 1]
     }
+
+    function handleLastQuestion() {
+        let filteredQuestions = filterQuestions()
+        if (filteredQuestions.length > 1) console.log("There are more questions")
+        if (youtubeComponent) youtubeComponent.loadIframe()
+    }
 </script>
 
-<!-- <h1>{storeMessage}</h1>
+ <!-- <h1>{storeMessage}</h1>
 <button on:click={updateStoreMessage}>Update store message</button> -->
 
 {#if currentQuestion}
@@ -113,6 +119,7 @@
 
 
 {#if hasMoreQuestions}
+<!-- could refactor button into generic button component that will accept any on:click  -->
 <NextButton on:newQuestion={loadRandomQuestion} />
 {:else}
     <YouTube bind:this={youtubeComponent} backgroundVideo={true} videoId="hRkY4edLXbE" />
@@ -140,6 +147,8 @@
 
 <style>
     .question {
+        position: relative;
+        z-index: 1;
         text-align: center;
         width: 100%;
     }
