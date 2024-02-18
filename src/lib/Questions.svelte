@@ -4,7 +4,9 @@
     import { Confetti } from "svelte-confetti"
     import NextButton from "./NextButton.svelte"
     import { storeValue } from "../store"
+    import YouTube from "./YouTube.svelte"
 
+    let youtubeComponent
     let storeMessage
 
     storeValue.subscribe(value => {
@@ -20,15 +22,15 @@
     let questions = []
     let askedQuestionIds = []
     let selectedCategories = [
-        "culture and taste",
-        "family and friends",
-        "life and death",
-        "love and relationships",
-        "personality and emotions",
+        // "culture and taste",
+        // "family and friends",
+        // "life and death",
+        // "love and relationships",
+        // "personality and emotions",
         "self",
-        "sex",
-        "travel",
-        "work and money",
+        // "sex",
+        // "travel",
+        // "work and money",
     ]
     let selectedDifficulties = ["easy", "medium", "hard"]
     let hasMoreQuestions = true
@@ -36,6 +38,12 @@
     const difficultyMap = ["hard", "medium", "easy"]
 	
 	$: diff_class = displayDifficulty
+
+    $: {
+        if (!hasMoreQuestions && youtubeComponent) {
+            youtubeComponent.loadIframe();
+        }
+    }
 
     async function fetchQuestions() {
         const basePath = import.meta.env.BASE_URL
@@ -68,12 +76,12 @@
         questions = await fetchQuestions()
         loadRandomQuestion()
     })
-
+    
     function loadRandomQuestion() {
         let filteredQuestions = filterQuestions()
 
         if (!filteredQuestions.length) {
-            currentQuestion = "By replacing fear of the unknown with curiosity we open ourselves up to an infinite stream of possibility. - Alan Watts"
+            currentQuestion = "By replacing fear of the unknown with curiosity we open ourselves up to an infinite stream of possibility - Alan Watts"
             displayDifficulty = "All questions complete"
             hasMoreQuestions = false
             return
@@ -95,18 +103,19 @@
 <button on:click={updateStoreMessage}>Update store message</button> -->
 
 {#if currentQuestion}
-    {#each [currentQuestion] as question (question)}
-        <div transition:slide={{duration: 500}} class="question">
-            <h2 transition:fade={{delay: 500}}>{question}</h2>
-            <p transition:slide={{delay: 600, axis: 'y', }} class="{diff_class}">{displayDifficulty}</p>
-        </div>
-    {/each}
+{#each [currentQuestion] as question (question)}
+<div transition:slide={{duration: 500}} class="question">
+    <h2 style="{!hasMoreQuestions ? 'font-size: var(--font-size-lg)' : ''}" transition:fade={{delay: 500}}>{question}</h2>
+    <p transition:slide={{delay: 600, axis: 'y', }} class="{diff_class}">{displayDifficulty}</p>
+</div>
+{/each}
 {/if}
 
 
 {#if hasMoreQuestions}
-    <NextButton on:newQuestion={loadRandomQuestion} />
+<NextButton on:newQuestion={loadRandomQuestion} />
 {:else}
+    <YouTube bind:this={youtubeComponent} backgroundVideo={true} videoId="hRkY4edLXbE" />
     <div class="confetti">
         <Confetti
             x={[-5, 5]}
@@ -161,6 +170,7 @@
         margin-block-end: 1rem;
         font-size: var(--font-size-xl);
         color: var(--color-text-primary);
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
     }
 
     .confetti {
